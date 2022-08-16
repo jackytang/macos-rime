@@ -1,7 +1,6 @@
 patch:
   show_notifications_when: appropriate                  # 状态通知，适当，也可设为全开（always）全关（never）
 
-  #style/color_scheme: mojave_dark
   style/color_scheme: system_blue                       # 方案命名，不能有空格
   style/color_scheme_dark: mritd_dark
   preset_color_schemes:
@@ -24,7 +23,7 @@ patch:
       text_orientation: horizontal                      # horizontal | vertical
       inline_preedit: true                              # 单行显示，false双行显示
       candidate_format: "%c.\u2005%@ \u2005"            # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间的。
-      font_face: "MiSans"                               # 候选词编号字体
+      font_face: "PingFangSC"                           # 候选词编号字体
       font_point: 16                                    # 候选文字大小
       label_font_point: 14                              # 候选编号大小
       label_font_face: "SFCompactText-Regular"          # 候选词编号字体
@@ -46,7 +45,7 @@ patch:
       border_height: 4                                  # 窗口边界高度，大于圆角半径才生效
       border_width: 4                                   # 窗口边界宽度，大于圆角半径才生效
       border_color_width: 0
-      font_face: "MiSans"                               # 候选词字体
+      font_face: "PingFangSC"                           # 候选词字体
       font_point: 16                                    # 候选字词大小
       label_font_point: 14                              # 候选编号大小
       text_color: 0xdedddd                              # 拼音行文字颜色，24位色值，16进制，BGR顺序
@@ -62,14 +61,6 @@ patch:
       comment_text_color: 0xdedddd                      # 拼音等提示文字颜色
 
   app_options:
-    com.jetbrains.intellij:
-      vim_mode: true
-    com.jetbrains.datagrip:
-      vim_mode: true
-    com.jetbrains.WebStorm:
-      vim_mode: true
     com.microsoft.VSCode:
       vim_mode: true
       ascii_mode: false
-    com.runningwithcrayons.Alfred:
-      vim_mode: true
