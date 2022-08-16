@@ -8,8 +8,6 @@ patch:
   # - schema: double_pinyin                                         # 自然碼雙拼
   # - schema: double_pinyin_flypy                                   # 小鹤雙拼
   - schema: wubi_pinyin                                             # 五笔拼音混合輸入
-  punctuator:
-    import_preset: alternative
   switcher/hotkeys:                                                 # 這個列表裏每項定義一個快捷鍵，使哪個都中
     - "Control+grave"                                               # 你看寫法並不是 Ctrl+` 而是與 IBus 一致的表示法
   key_binder/bindings:
