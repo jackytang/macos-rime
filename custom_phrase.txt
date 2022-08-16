@@ -37,7 +37,7 @@ Rime	rime	3
 ⏎	return Return
 ␣	space Space
 ⌫	del Del
-⎋	esc Escape 
+⎋	esc Escape
 ⏏	eject Eject
 GBK	gbk
 UTF-8	utfba
@@ -929,3 +929,20 @@ Zhihu	zhi hu
  PAY	apple pay
  WATCH	apple watch
 	apple logo
+git	git
+ls	ls
+cd	cd
+pwd	pwd
+git ps	gitps
+kubernetes	kubernetes
+kubernetes	kuber
+kubectl	kubectl
+kubectl	kubec
+docker	docker
+docker	dock
+ipvs	ipvs
+ps	ps
+bash	bash
+source	source
+source	sou
+rm	rm

@@ -2,18 +2,24 @@ patch:
   menu:
     page_size: 6
   schema_list:
-  - schema: luna_pinyin_simp      # 朙月拼音 简化字
-#  - schema: luna_pinyin          # 朙月拼音
-#  - schema: luna_pinyin_fluency   # 语句流
-#  - schema: double_pinyin        # 自然碼雙拼
-  - schema: double_pinyin_flypy   # 小鹤雙拼
-  - schema: wubi_pinyin           # 五笔拼音混合輸入
+  # - schema: luna_pinyin_simp                                      # 朙月拼音 简化字
+  # - schema: luna_pinyin                                           # 朙月拼音
+  # - schema: luna_pinyin_fluency                                   # 语句流
+  # - schema: double_pinyin                                         # 自然碼雙拼
+  # - schema: double_pinyin_flypy                                   # 小鹤雙拼
+  - schema: wubi_pinyin                                             # 五笔拼音混合輸入
+  punctuator:
+    import_preset: alternative
+  switcher/hotkeys:                                                 # 這個列表裏每項定義一個快捷鍵，使哪個都中
+    - "Control+grave"                                               # 你看寫法並不是 Ctrl+` 而是與 IBus 一致的表示法
+  key_binder/bindings:
+    - { accept: "Shift+space", toggle: noop, when: always }         # 取消全半角切换
+    - { when: always, accept: Control+period, toggle: ascii_punct } # 切换西文/中文标点 Ctrl + .
+  ascii_composer/good_old_caps_lock: false                        # capslock 键切换英文并输出小写
+  ascii_composer/switch_key:
+    Caps_Lock: commit_code
+    Control_L: noop
+    Control_R: noop
+    Shift_L: noop
+    Shift_R: noop
 
-
-#  ascii_composer/good_old_caps_lock: false # capslock 键切换英文并输出小写
-#  ascii_composer/switch_key:
-#    Caps_Lock: commit_code
-#    Control_L: noop
-#    Control_R: noop
-#    Shift_L: noop
-#    Shift_R: noop
