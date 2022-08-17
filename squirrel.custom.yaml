@@ -59,8 +59,35 @@ patch:
       hilited_candidate_back_color: 0x4b4b4b            # 第一候选项背景背景色
       hilited_candidate_label_color: 0xffffff           # 第一候选项编号颜色
       comment_text_color: 0xdedddd                      # 拼音等提示文字颜色
-
+  # 特定程序默认输入状态
   app_options:
+    # 进程名称,Mac系统可以打开 "活动监视器" 双击进程名称,点击 "取样"
+    # 找到显示的信息中 "Identifier" 字段后的值
+    # ascii_mode: false  默认输入法模式: false 中文 true 英文
+    # ascii_punct: true  是否设置为英文标点
+    # 本文设置默认的标点符号为中文标点，下面的开发工具设置为英文标点
     com.microsoft.VSCode:
-      vim_mode: true
       ascii_mode: false
+      ascii_punct: true
+    com.googlecode.iterm2:
+      ascii_mode: false
+      ascii_punct: true
+    com.jetbrains.intellij:
+      ascii_mode: false
+      ascii_punct: true
+    com.jetbrains.datagrip:
+      ascii_mode: false
+      ascii_punct: true
+    com.jetbrains.WebStorm:
+      ascii_mode: false
+      ascii_punct: true
+    com.runningwithcrayons.Alfred:
+      ascii_mode: false
+      ascii_punct: true
+    com.tinyapp.TablePlus:
+      ascii_mode: false
+      ascii_punct: true
+    com.apple.dt.Xcode:
+      ascii_mode: true
+      ascii_punct: true
+
